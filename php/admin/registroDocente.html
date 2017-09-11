@@ -69,7 +69,7 @@
 				<!-- Note that "m8 l9" was added -->
 				<div class="row">
 
-					<form class="col s12" action="insertarDocente.php" method="post">
+					<form class="col s12" id="datos" onSubmit="return validar()" method="post">
 						<div class="row">
 							<div class="input-field col s12 m12 l6 ">
 								<input id="identificacion" type="number" class="validate " required name="identificacion">
@@ -140,6 +140,28 @@
 			<div class="container"> Sincelejo © 2006-2017 </div>
 		</div>
 	</footer>
+        
+        <script>
+		function validar() {
+		
+
+				var str = $( "#datos" ).serialize();
+					$.ajax( {
+					url: "php/insertarDocente.php",
+					method: "POST",
+					data: str,
+
+					success:function(resp){
+						alert(resp);
+					}
+
+				} );
+			
+
+			return true;
+		}
+		
+	</script>
 	
 </body>
 

@@ -17,12 +17,12 @@ $idAdmin = $_SESSION[ "idAdmin" ];
 $sql = "INSERT INTO `docente` (`iddocente`, `contraDocente`, `nombre`, `apellido`, `gradoEncargado`, `sexo`,`telefono` , `idAdministrador`) VALUES ('$identificacion', '$contrasena', '$nombre', '$apellido', '$grado', '$sexo', '$telefono','$idAdmin');";
 
 if ( $mysqli->query( $sql ) === TRUE ) {
-	echo "<script>alert('Registro exitoso')</script>";
-	echo "<script>location.href='registroDocente.php'</script>";
+	echo 'Registro exitoso';
+	//echo "<script>location.href='registroDocente.php'</script>";
 } else {
 	echo "Error: " . $sql . "<br>" . $mysqli->error;
 }
 
 $mysqli->close();
-
+exit();
 ?>
