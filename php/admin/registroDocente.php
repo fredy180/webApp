@@ -1,8 +1,4 @@
-<?php
-session_start();
 
-if($_SESSION["idAdmin"]!=""){
-?>
 <!DOCTYPE html>
 <html>
 
@@ -149,8 +145,5 @@ if($_SESSION["idAdmin"]!=""){
 </body>
 
 </html>
-<?php
-    }else{
-     header("location:../../index.php");
-}
-?> 
+
+ 
