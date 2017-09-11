@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TEMAS DE ESTUDIO</title>
+	<script src="../JavaScript/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="../JavaScript/materialize.min.js" type="text/javascript"></script>
+	<script src="../JavaScript/materialize.js" type="text/javascript"></script>
+	<link href="../CSS/materialize.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../CSS/estilo.css">
+	<link rel="stylesheet" href="../CSS/materialize.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script>
+	$(document).ready(function(){
+    $("#articles").load("ajax/inicio.html");
+       $(".button-collapse").sideNav();
+		
+				
+  });
+    
+  
+      
+	</script>
+	</head>
+
+	<body>
+<!-- MENU DE NAVEGACION -->
+
+<nav class="teal  header">
+       <div class="nav-wrapper"> <a href="#" class="brand-logo"><img alt="LOGO" src="../imagenes/logo.png" width="250"></a> <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="../index.html"><i class="material-icons left">home</i>INICIO</a></li>
+             <li><a href="evaluacion.html"><i class="material-icons left">inbox</i>EVALUACION</a></li>
+             <li><a href="login.html"><i class="material-icons left">person_outline</i>Entrar</a></li>
+          </ul>
+      <ul class="side-nav" id="mobile-demo">
+             <li><a href="../index.html"><i class="material-icons left">home</i>INICIO</a></li>
+             <li><a href="estudio.html"><i class="material-icons left">inbox</i>EVALUACION</a></li>
+             <li><a href="login.html"><i class="material-icons left">person_outline</i>Entrar</a></li>
+          </ul>
+   </div>
+    </nav>
+
+<!------ contenedor--------->
+<div class="row contenido" >
+       <div class="col s12 m5 l3">
+      <div class="z-depth-3"> <br>
+             <br>
+             <center>
+            <h3 class="teal-text darken-3">MENÚ</h3>
+         </center>
+             <hr>
+             <ul class="collapsible" >
+            <li>
+                   <div class="collapsible-header active"><i class="material-icons">person</i>GRADO NOVENO</div>
+                   <div class="collapsible-body"><span>
+                      <div class="collection"> <a href="#!" class="collection-item pagina1">EJEMPLOS PRACTICOS</a> <a href="#!" class="collection-item pagina2">CONOCIMIENTO PREVIOS</a> <a href="#!" class="collection-item">EJERCICIO PROPUESTOS</a> </div>
+                      </span> </div>
+                </li>
+            <li>
+                   <div class="collapsible-header active"><i class="material-icons">people</i>GRADO DECIMO</div>
+                   <div class="collapsible-body"><span>
+                      <div class="collection"> <a href="#!" class="collection-item ">EJEMPLOS PRACTICOS</a> <a href="#!" class="collection-item">CONOCIMIENTO PREVIOS</a> <a href="#!" class="collection-item">EJERCICIO PROPUESTOS</a> </div>
+                      </span></div>
+                </li>
+         </ul>
+          </div>
+   </div>
+       <div id="articles">
+      <div class="col s12 m7 l9 z-depth-3"> <!-- Note that "m8 l9" was added -->
+             <div class="row">
+            <div class="col s12 m12 l6"> 
+                   <!------contenido 1------->
+                   <article>
+                  <h4>La Importancia de las Matemáticas</h4>
+                  <p style="text-align: justify"> Las matemáticas son fundamentales para el desarrollo intelectual de las personas, ayuda a ser lógicos, a razonar ordenadamente y a tener una mente preparada para el pensamiento, la crítica y la abstracción para la solucion de problemas. </p>
+                  <img src="imagenes/img1.jpg" alt=""> </article>
+                   
+                   <!-------contenido 2------>
+                   <article>
+                  <h4>Pensamiento Matemático</h4>
+                  <p style="text-align: justify"> Es la sistematización y la contextualización del conocimiento de las matemáticas. Este tipo de pensamiento se desarrolla a partir de conocer el origen y la evolución de los conceptos y las herramientas que pertenecen al ámbito matemático. </p>
+                  <img src="imagenes/img2.jpg" alt=""> </article>
+                </div>
+            <div class="col s12 m12 l6">
+                   <article>
+                  <h4>Procedimientos Matematicos</h4>
+                  <p style="text-align: justify">
+                      <ol>
+                         <li >Herramientas que satisfacen una necesidad concreta de forma eficaz.</li>
+                         <li >Aplicacion o modificacion para la adecuacion a una nueva situacion.</li>
+                         <li >Modelos de resolucion de problemas. </li>
+                         <li >Verificacion de procesos correctos o incorrectos.</li>
+                      </ol>
+                  </p>
+                  <img  src="imagenes/img3.jpg" alt="" width="70%"> </article>
+                   <article>
+                  <h4>ICFES Preparación</h4>
+                  <p style="text-align: justify"> Pruebas Saber pro, Está estipulado que los alumnos que obtengan los diez primeros puntajes del departamento o capital reciben una distinción llamada Andrés Bello además de recibir descuentos para estudiar en varias universidades de hasta el 75% o incluso becas completas. </p>
+                  <img class="col s9" src="imagenes/img4.jpg" alt="" width="20%"> </article>
+                </div>
+         </div>
+             
+          </div>
+   </div>
+    </div>
+
+<!-- ESTA ES LA SECCIÓN DE PIE DE PAGINA -->
+<footer class="page-footer  teal darken-3">
+       <div class="container">
+      <div class="row">
+             <div class="col l6 s12">
+            <h5 class="white-text">Contacto.</h5>
+            <p class="grey-text text-lighten-4">Institucion Educativa</p>
+         </div>
+          </div>
+   </div>
+       <div class="footer-copyright teal darken-4">
+      <div class="container"> Sincelejo © 2006-2017 </div>
+   </div>
+    </footer>
+<script>
+$(document).ready(function(){
+    $(".pagina1").click(function(){
+        $("#articles").load("../ajax/ejemploGrado9.html");
+    });
+	
+	$(".pagina2").click(function(){
+        $("#articles").load("ajax/multimedia.html");
+		
+    });
+});
+</script>
+</body>
+</html>
